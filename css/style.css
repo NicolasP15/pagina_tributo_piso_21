@@ -1,0 +1,700 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section.contenido {padding: 1% 8% 4% 8%;}
+
+@font-face {
+    font-family: AkzidenzGroteskBQ-Bold;
+    src: url(../fonts/fuente.ttf);
+}
+
+/* Header */
+#header {
+    background-color: #e4e4e4;
+    height: 85px;
+    padding: 5px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header img {
+    width: 200px;
+    cursor: pointer;
+}
+
+/* Menu */
+.label-menu-hamburguesa, 
+#menu-hamburguesa {
+    display: none;
+}
+
+.label-menu-hamburguesa i.fa-solid.fa-bars {
+    font-size: 28px;
+    color: #000000;
+}
+
+nav.menu ul {
+    display: flex;
+    align-items: center;
+}
+
+nav.menu ul li {
+    display: inline-block;
+    background-color: #cccccc;
+    margin: 5px 0;
+    transition: background-color 0.3s ease;
+}
+
+nav.menu ul:hover li {
+    background-color: transparent;
+}
+
+nav.menu ul li:hover {
+    background-color: #000000;
+}
+
+nav.menu ul li a.enlace-menu {
+    font-family: AkzidenzGroteskBQ-Bold;
+    text-decoration: none;
+    display: block;
+    padding: 10px 30px;
+    color: #000000;
+    transition: color 0.3s ease;
+    border: 1px solid #cccccc;
+}
+
+nav.menu ul li a.enlace-menu:hover {
+    color: #ffffff;
+}
+
+
+#Slider {
+    margin-bottom: 40px;
+}
+
+.titulo-seccion {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+/* Slider imagenes */
+div.slider-imagenes {
+    width: 100%;
+    height: 680px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+div.slider-imagenes ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 20s infinite alternate ease-in-out;
+}
+
+div.slider-imagenes li {
+    width: 100%;
+    list-style: none;
+    position: relative;
+}
+
+div.texto-slider {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+}
+
+div.texto-slider h1 {
+    font-size: 45px;
+}
+
+div.slider-imagenes img {
+    width: 100%;
+}
+
+@keyframes slide {
+    0% {margin-left: 0%;}
+    20% {margin-left: 0%;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+
+/* Segunda sección */
+#biografia {
+    line-height: 1.6;
+    font-size: 17px;
+}
+
+.info-biografia {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.info-biografia .imagen-biografia-div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    flex: 1;
+}
+
+.info-biografia .imagen-biografia-div img {width: 500px;}
+
+.info-biografia .imagen-biografia-div p {font-size: 14px;}
+
+
+.info-biografia .texto-biografia, .info-biografia .texto-biografia-div h3 {margin-left: 30px;}
+
+.info-biografia .texto-biografia-div {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    flex: 2;
+}
+
+.info-biografia .texto-biografia-div p {margin-bottom: 15px;}
+
+.info-biografia .texto-biografia-div li {
+    margin-left: 55px;
+    margin-bottom: 10px;
+}
+
+
+.datos-interesantes {
+    margin-top: 40px;
+    line-height: 1.6;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+
+.datos-interesantes .datos-interesantes-texto {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
+
+.datos-interesantes .datos-interesantes-texto li {margin-left: 50px; margin-right: 50px; margin-bottom: 10px;}
+
+.datos-interesantes .imagen-biografia-div2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex: 1;
+}
+
+.datos-interesantes .imagen-biografia-div2 img {width: 640px;}
+
+.datos-interesantes .imagen-biografia-div2 p {font-size: 14px;}
+
+
+/* Tercera sección */
+div.album-div {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+div.album-div img {
+    border-radius: 100px;
+    margin-bottom: 25px;
+}
+
+div.album-div div.albumes-div {
+    flex: 1;
+    margin: 10px 10px 20px 10px;
+    max-width: calc(30% - 4%);
+    box-sizing: border-box;
+    border: #727272 dashed 1px;
+    border-radius: 25px;
+    padding: 25px;
+}
+
+div.album-div h4 {
+    margin-bottom: 15px;
+    height: 36px;
+}
+
+div.album-div p {
+    line-height: 1.6;
+}
+
+/* Cuarta sección */
+div.videos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+div.videos div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    margin: 2%;
+}
+
+
+/* Quinta sección */
+#contacto {
+    background-color: #000000;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+#contacto h2 {
+    color: #ffffff;
+}
+
+/* Formulario */
+div.formulario-div {
+    display: flex;
+    justify-content: center;
+}
+
+form.formulario {
+    width: 90%;
+    max-width: 700px;
+    background: #dddddd;
+    border-radius: 10px;
+    padding: 30px;
+    margin: auto;
+    box-shadow: 0 5px 10px -5px rgba(255, 255, 255, 1)
+}
+
+div.contenedor-formulario {
+    display: grid;
+    gap: 8px;
+}
+
+form.formulario fieldset {
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+form.formulario div.formulario-nombres {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+#nombre, #label-nombre {
+    margin-right: 8px;
+}
+
+#apellidos, #label-apellidos {
+    margin-left: 8px;
+}
+
+#label-nombre, #label-apellidos {margin-bottom: 10px;}
+
+#mensaje {height: 100px; font-family: Arial, Helvetica, sans-serif;}
+
+.fomulario-boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#botonF {
+    background: #000000;
+    color: #ffffff;
+    height: 50px;
+    width: 50%;
+    border: none;
+    border-radius: 25px;
+}
+
+form.formulario .campos-formularios  {
+    border: none;
+    border-bottom: 1px solid #000000;
+    outline: none;
+    transition: border-color 0.3s ease;
+    height: 40px;
+    padding: 10px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+form.formulario .campos-formularios:focus {
+    border-color: #007BFF;
+}
+
+
+/* Footer */
+footer {
+    background-color: #dddddd;
+    color: #000000;
+}
+
+footer img {
+    width: 200px;
+}
+
+.footer-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1% 1.5% 0 1.5%;
+}
+
+div.footer-iconos ul {
+    list-style: none;
+}
+
+div.footer-iconos ul li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+div.footer-iconos a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 25px;
+}
+
+div.footer-nombre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    font-size: 18px;
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    height: 40px;
+    padding: 0 -1.5%;
+}
+
+nav.menu-footer {
+    font-size: 14px;
+}
+
+
+/* Diseño Responsivo 1024px */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    section.contenido {
+        padding: 1% 6% 4% 6%;
+    }
+
+    #header {
+        padding: 5px 3%;
+    }
+
+    nav.menu ul li a.enlace-menu {
+        padding: 10px 20px;
+    }
+
+
+    div.slider-imagenes {
+        height: auto;
+    }
+
+
+    .info-biografia, .datos-interesantes {
+        display: block;
+    }
+
+    .info-biografia .texto-biografia-div, .info-biografia .texto-biografia, .info-biografia .texto-biografia-div h3 {margin-left: 0;}
+
+    .info-biografia .imagen-biografia-div {
+        margin-bottom: 20px;
+        margin-right: 40px;
+        display: block;
+        float: left;
+    }
+
+    .info-biografia .texto-biografia-div {
+        display: block;
+    }
+
+    .info-biografia .imagen-biografia-div img, .datos-interesantes .imagen-biografia-div2 img {
+        max-width: 100%;
+        width: 450px;
+        height: auto;
+    }
+
+    .info-biografia .texto-biografia-div li {margin-left: 30px;}
+
+    .datos-interesantes {margin-top: 60px;}
+
+    .datos-interesantes .imagen-biografia-div2 {
+        display: block;
+        float: right;
+        margin-bottom: 20px;
+        margin-left: 40px;
+    }
+
+    .datos-interesantes .datos-interesantes-texto {display: block;}
+
+    .datos-interesantes-texto {margin-bottom: 40px;}
+
+    .datos-interesantes .datos-interesantes-texto li {margin-left: 30px; margin-right: 0;}
+
+
+    div.album-div div.albumes-div {
+        max-width: max-content;
+    }
+
+
+    div.videos div {
+        flex: 0 0 47%;
+        margin: 2% 1%;
+    }
+
+    div.videos div iframe {
+        aspect-ratio: 16 / 9;
+        width: 100%;
+        height: auto;
+    }
+
+
+    .footer-div {
+        justify-content: space-between;
+    }
+
+    div.footer-iconos ul li {
+        padding: 5px;
+    }
+    
+    nav.menu-footer ul li a.enlace-menu {
+        padding: 10px 15px;
+    }
+}
+
+
+
+/* Diseño Responsivo 768px */
+
+@media screen and (max-width: 768px) {
+    section.contenido {
+        padding: 5%;
+    }
+
+    #header {
+        padding: 5px 5%;
+    }
+
+    #header img {
+        width: 150px;
+    }
+
+    div.div-menu-hamburguesa {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+    }
+
+
+    .label-menu-hamburguesa {
+        display: block;
+        cursor: pointer;
+    }
+
+    nav#menu-responsivo ul {
+        display: none;
+        position: absolute;
+        top: 85px;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        right: 0;
+        z-index: 1000;
+    }
+
+    nav#menu-responsivo ul li {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+
+    nav#menu-responsivo ul:hover li {
+        background-color: #cccccc;
+    }
+
+    a.enlace-menu {
+        padding: 2rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav#menu-responsivo ul li a.enlace-menu:hover {
+        color: #727272;
+    }
+
+    #menu-hamburguesa:checked ~ .menu ul {
+        display: block;
+    }
+
+
+    #Slider {margin-bottom: 20px;}
+
+
+    div.slider-imagenes {
+        width: 100%;
+        height: auto;
+    }
+
+    div.slider-imagenes img {
+        height: auto;
+    }
+
+    div.slider-imagenes li {
+        width: 100%;
+    }
+
+    div.texto-slider {
+        top: 35%;
+    }
+
+    div.texto-slider h1 {
+        font-size: 26px;
+        padding: 0 20px;
+    }
+
+    .info-biografia, .datos-interesantes {
+        display: block;
+    }
+
+    .info-biografia .texto-biografia-div, .info-biografia .texto-biografia, .info-biografia .texto-biografia-div h3 {margin-left: 0;}
+
+    .info-biografia .imagen-biografia-div img, .datos-interesantes .imagen-biografia-div2 img {
+        max-width: 100%;
+        width: 700px;
+        height: auto;
+    }
+
+    .info-biografia .texto-biografia-div li {margin-left: 30px;}
+
+    .datos-interesantes {margin-top: 20px;}
+
+    .datos-interesantes-texto {margin-bottom: 40px;}
+
+    .datos-interesantes .datos-interesantes-texto li {margin-left: 30px; margin-right: 0;}
+
+
+    div.album-div {display: block;}
+
+    div.album-div div.albumes-div {
+        max-width: none;
+    }
+
+    div.videos div {
+        flex: 0 0 100%;
+        margin: 2% 0;
+    }
+
+    div.videos div iframe {
+        aspect-ratio: 16 / 9;
+        width: 100%;
+        height: auto;
+    }
+
+
+    form.formulario {
+        width: 90%;
+        padding: 15px;
+    }
+
+    form.formulario fieldset {
+        flex-direction: column;
+    }
+
+    form.formulario div.formulario-nombres {
+        flex-direction: column;
+    }
+
+    #nombre, #label-nombre {margin-right: 0;}
+    
+    #apellidos, #label-apellidos {margin-left: 0;}
+
+    #nombre, #apellidos {margin-bottom: 15px;}
+
+
+    div.footer-div {
+        display: block;
+    }
+
+    div.footer-div div.div-logo-footer {
+        margin-top: 20px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+
+    nav.menu-footer {margin-bottom: 30px; font-size: 16px;}
+
+    nav.menu-footer ul {
+        display: block;
+        align-items: center;
+    }
+
+    nav.menu-footer ul li {
+        display: block;
+    }
+
+    div.footer-iconos {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    div.footer-iconos ul li {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    div.footer-nombre {font-size: 15px;}
+}
+
+
+/* Diseño Responsivo 480px */
+
+@media screen and (max-width: 480px) {
+    section.contenido {
+        padding: 7%;
+    }
+
+    #Slider {margin-bottom: 10px;}
+
+    div.texto-slider {
+        top: 25%;
+    }
+
+
+    .info-biografia .imagen-biografia-div img, .datos-interesantes .imagen-biografia-div2 img {
+        width: 500px;
+    }
+
+
+    nav.menu-footer {font-size: 14px;}
+
+    div.footer-iconos ul li {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
